@@ -1,0 +1,317 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bodyglowna {
+  margin: auto;
+  width: 60%;
+  height: 100%;
+  background-image: url(../img/fortepian.jpg);
+}
+
+.bodywykonawcy {
+  margin: auto;
+  width: 60%;
+  height: 100%;
+  background-color: #768791;
+}
+
+.bodypodstrony {
+  margin: auto;
+  width: 60%;
+  height: 100%;
+  background-image: url(../img/bodypodstrony.jpg);
+}
+
+.header {
+  background-color: #353831;
+  color: #20FC8F;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+.header__tekst {
+  margin-top: 12px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+.header__nagłówek {
+  margin-top: 10px;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+.header__nav {
+  list-style-type: none;
+  display: flex;
+}
+.header__nav__element {
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.header__nav__a {
+  text-decoration: none;
+  color: #20FC8F;
+}
+
+.main {
+  padding: 1em;
+  background-color: #2D2D2A;
+  display: flex;
+  gap: 10px;
+  height: 585px;
+  justify-content: center;
+}
+.main__artykuł {
+  background-color: #38423B;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  width: 40%;
+}
+.main__artykuł__nagłówek {
+  padding: 1em;
+  color: #20FC8F;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.main__artykuł__tekst {
+  padding: 0.5em;
+  color: #20FC8F;
+  font-size: 15px;
+  line-height: 15px;
+  margin: 10px;
+  height: 30%;
+  line-height: 30px;
+}
+.main__artykuł__zdjęcie {
+  height: 320px;
+  width: 100%;
+  bottom: 0;
+}
+
+.glowny {
+  padding: 1em;
+  background-color: #2D2D2A;
+  gap: 10px;
+  justify-content: center;
+}
+.glowny__sekcja {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.glowny__tytul {
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  color: #79BD9A;
+  margin-bottom: 15px;
+}
+.glowny__zdjecie {
+  display: flex;
+  width: 250px;
+  height: 250px;
+}
+.glowny__opis {
+  color: #79BD9A;
+  padding: 0.5em;
+  margin-bottom: 50px;
+}
+.glowny__artykul {
+  width: 32%;
+}
+
+.glownyzespol {
+  height: 550px;
+}
+.glownyzespol__zdjecie {
+  width: 300px;
+  height: 150px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+.glownyzespol__artykul__lewo {
+  float: left;
+  width: 60%;
+  height: 100%;
+  background-color: #2D2D2A;
+  justify-content: center;
+}
+.glownyzespol__artykul__lewo__tekst {
+  color: #20FC8F;
+  padding: 0.5em;
+  line-height: 22px;
+}
+.glownyzespol__artykul__lewo__nazwapiosenki {
+  color: #20FC8F;
+  padding: 0.5em;
+  line-height: 22px;
+  text-align: center;
+}
+.glownyzespol__artykul__lewo__tekstpiosenki {
+  color: #20FC8F;
+  line-height: 13px;
+  text-align: left;
+  font-size: 11px;
+}
+.glownyzespol__artykul__prawo {
+  float: right;
+  width: 40%;
+  background-color: #2D2D2A;
+}
+.glownyzespol__artykul__prawo__tekst {
+  color: #79BD9A;
+  padding: 0.5em;
+  line-height: 22px;
+}
+.glownyzespol__artykul__prawo__iframe {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.glownyzespol__artykul__prawo__opis {
+  color: #79BD9A;
+  padding: 0.5em;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+
+.albumymain {
+  padding: 1em;
+  background-color: #2D2D2A;
+}
+.albumymain__sekcja {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.albumymain__artykułlewo {
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  grid-template-rows: 80px 100px;
+  grid-gap: 20px;
+}
+.albumymain__artykułprawo {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  grid-template-rows: 80px 100px;
+}
+.albumymain__tytul {
+  font-family: "Open Sans", sans-serif;
+  color: #79BD9A;
+  grid-column: 2;
+  text-align: left;
+  grid-row: 1;
+  font-size: 16px;
+}
+.albumymain__wykonawca {
+  font-family: "Open Sans", sans-serif;
+  color: #79BD9A;
+  grid-column: 2;
+  grid-row: 2;
+  text-align: left;
+  font-size: 14px;
+}
+.albumymain__zdjecie {
+  grid-column: 1;
+  width: 200px;
+  height: 200px;
+}
+.albumymain__linia {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-bottom: 15px;
+}
+
+.mainplyty {
+  max-height: 550px;
+  height: 550px;
+  background-color: #2D2D2A;
+  font-family: "Open Sans", sans-serif;
+  color: #79BD9A;
+}
+.mainplyty__artykullewo {
+  float: left;
+  width: 60%;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.mainplyty__artykulprawo {
+  float: right;
+  width: 30%;
+  margin-right: 30px;
+  margin-top: 30px;
+  text-align: right;
+}
+.mainplyty__zdjecie {
+  margin-top: 20px;
+  width: 100%;
+  height: 150px;
+}
+.mainplyty__tytul {
+  font-family: "Open Sans", sans-serif;
+  color: #79BD9A;
+}
+.mainplyty__tekst {
+  padding: 1em;
+}
+.mainplyty__piosenki {
+  padding: 0.25em;
+}
+.mainplyty__linia {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #79BD9A;
+  margin: 1em 0;
+  padding: 0;
+  width: 40%;
+}
+
+.footer {
+  background-color: #353831;
+  text-align: center;
+  height: 5%;
+  position: absolute;
+  bottom: 0;
+  width: 60%;
+}
+.footer__podpis {
+  color: #20FC8F;
+  font-size: 12px;
+  padding: 0.5em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footerpodstrona {
+  background-color: #353831;
+  text-align: center;
+  height: 5%;
+  width: 100%;
+}
+.footerpodstrona__podpis {
+  color: #20FC8F;
+  font-size: 12px;
+  padding: 0.5em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.mainpodstrona {
+  padding: 1em;
+  background-color: #2D2D2A;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */

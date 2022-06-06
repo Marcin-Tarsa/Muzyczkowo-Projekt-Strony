@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url(../img/glowna.jpg);
+}
+
+.main {
+  width: 700px;
+  height: 500px;
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 500px;
+}
+.main__tytul {
+  text-align: center;
+  font-size: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  margin-bottom: 0px;
+  color: #33FFFF;
+  text-shadow: 10px 3px black;
+}
+.main__podtytul {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: #33FFFF;
+  text-shadow: 4px 1px black;
+}
+.main__przycisk {
+  width: 180px;
+  height: 50px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  margin: 50px auto;
+  display: block;
+  background-color: #33FFFF;
+  border: 3px solid #33FFFF;
+  border-radius: 5px;
+  transition: background-color 1000ms, color 1000ms;
+  text-decoration: none;
+  cursor: pointer;
+}
+.main__tekst {
+  text-decoration: none;
+}/*# sourceMappingURL=index.css.map */

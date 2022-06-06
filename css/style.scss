@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.bodyglowna{
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    background-image: url(../img/fortepian.jpg);
+}
+
+.bodywykonawcy{
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    background-color: #768791
+}
+
+.bodypodstrony{
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    background-image: url(../img/bodypodstrony.jpg);
+    
+}
+
+.header{
+        background-color: #353831;
+        color: #20FC8F;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        &__tekst {
+            margin-top: 12px;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        &__nagłówek {
+        margin-top: 10px;
+        font-size: 24px;
+        font-family: 'Montserrat', sans-serif;
+        }
+        &__nav {
+            list-style-type: none;
+            display: flex;
+            &__element {
+              padding: 10px;
+              font-size: 16px;
+              text-align: center;
+              font-family: 'Montserrat', sans-serif;
+            }
+            &__a{
+                text-decoration: none;
+                color: #20FC8F;
+            }
+          }
+    }
+    .main {
+        padding: 1em;
+        background-color: #2D2D2A;
+        display: flex;
+        gap: 10px;
+        height: 585px;
+        justify-content: center;
+
+        &__artykuł {
+        background-color: #38423B;
+        align-items: center;
+        font-family: 'Open Sans', sans-serif;
+        width: 40%;
+
+        &__nagłówek {
+            padding: 1em;
+            color: #20FC8F;
+            font-size: 15px;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        &__tekst {
+            padding: 0.5em;
+            color: #20FC8F;
+            font-size: 15px;
+            line-height: 15px;
+            margin: 10px;
+            height: 30%;
+            line-height: 30px;
+
+        }
+        &__zdjęcie{
+            height: 320px;
+            width: 100%;
+            bottom: 0;
+    
+            
+        }
+    }
+    
+}
+.glowny {
+    padding: 1em;
+    background-color: #2D2D2A;
+    gap: 10px;
+    justify-content: center;
+    &__sekcja{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+
+        
+    }
+    &__tytul{
+        text-align: left;
+        font-family: 'Open Sans', sans-serif;
+        color: #79BD9A;
+        margin-bottom: 15px;
+    }
+    &__zdjecie{
+        display: flex;
+        width: 250px;
+        height: 250px;
+        
+    }
+    &__opis{
+        color: #79BD9A;
+        padding: 0.5em;
+        margin-bottom: 50px;
+    }
+    &__artykul{
+        width: 32%;
+    }
+}
+
+    .glownyzespol{
+        height: 550px;
+    &__zdjecie{
+        width: 300px;
+        height: 150px;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+    &__artykul{
+    
+    &__lewo{
+        float: left;
+        width: 60%;
+        height: 100%;
+        background-color: #2D2D2A;
+        justify-content: center;
+        &__tekst{
+            color:  #20FC8F;
+            padding: 0.5em;
+            line-height: 22px;
+        }
+        &__nazwapiosenki{
+            color:  #20FC8F;
+            padding: 0.5em;
+            line-height: 22px;
+            text-align: center;
+        }
+        &__tekstpiosenki{
+            color:  #20FC8F;
+            line-height: 13px;
+            text-align: left;
+            font-size: 11px;
+        }
+        }
+    &__prawo{
+        float: right;
+        width: 40%;
+        background-color: #2D2D2A;
+        &__tekst{
+            color: #79BD9A;
+            padding: 0.5em;
+            line-height: 22px;
+        }
+        &__iframe{
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        &__opis{
+                color: #79BD9A;
+                padding: 0.5em;
+                line-height: 22px;
+                margin-bottom: 30px;
+        
+        }
+       
+    }
+    }
+}
+
+    .albumymain{
+        padding: 1em;
+        background-color: #2D2D2A;
+        &__sekcja{
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        width: 100%;
+        margin-bottom: 50px;
+        }
+        &__artykułlewo{
+        grid-column: 1;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        grid-template-rows: 80px 100px;
+        grid-gap: 20px;
+        }
+        &__artykułprawo{
+        grid-column: 2;
+        display: grid; 
+        grid-template-columns: 1.2fr 1fr;   
+        grid-template-rows: 80px 100px;
+        }
+        &__tytul{
+        font-family: 'Open Sans', sans-serif;
+        color: #79BD9A;
+        grid-column: 2;
+        text-align: left;
+        grid-row: 1;
+        font-size: 16px;
+        }
+        &__wykonawca{
+            font-family: 'Open Sans', sans-serif;
+        color: #79BD9A;
+        grid-column: 2;
+        grid-row: 2;
+        text-align: left;
+        font-size: 14px;
+        }
+        &__zdjecie{
+            grid-column: 1;
+            width: 200px;
+            height: 200px;
+        }
+        &__linia{
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+            margin-bottom: 15px;
+        }
+
+    }
+    .mainplyty{
+        max-height: 550px;
+        height: 550px;
+        background-color: #2D2D2A;
+        font-family: 'Open Sans', sans-serif;
+        color: #79BD9A;
+    &__artykullewo{
+        float: left;
+        width: 60%;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    &__artykulprawo{
+        float: right;
+        width: 30%;
+        margin-right: 30px;
+        margin-top: 30px;
+        text-align: right;
+    }  
+    &__zdjecie{
+        margin-top: 20px;
+        width: 100%;
+        height: 150px;
+    }
+    &__tytul{
+    font-family: 'Open Sans', sans-serif;
+    color: #79BD9A;
+    }
+    &__tekst{
+        padding: 1em;
+    }
+    &__piosenki{
+        padding: 0.25em;
+    }
+    &__linia{
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #79BD9A;
+    margin: 1em 0; 
+    padding: 0;
+    width: 40%;
+    }
+    }
+
+    .footer {
+        background-color: #353831;
+        text-align: center;
+        height: 5%;
+        position: absolute;
+        bottom: 0;
+        width: 60%;
+        &__podpis {
+            color: #20FC8F;
+            font-size: 12px;
+            padding: 0.5em;
+            font-family: 'Montserrat', sans-serif;
+          }
+      }
+      
+        
+
+      .footerpodstrona {
+        background-color: #353831;
+        text-align: center;
+        height: 5%;
+        width: 100%;
+        &__podpis {
+            color: #20FC8F;
+            font-size: 12px;
+            padding: 0.5em;
+            font-family: 'Montserrat', sans-serif;
+          }
+      }
+      
+      .mainpodstrona {
+        padding: 1em;
+        background-color: #2D2D2A;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
